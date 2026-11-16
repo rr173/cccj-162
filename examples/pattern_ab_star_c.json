@@ -1,0 +1,11 @@
+{
+  "seq": [
+    {"var": "A", "cond": {"cmp": {"op": "eq", "left": {"field": "kind"}, "right": {"lit": "A"}}}},
+    {"rep": {"of": {"var": "B", "cond": {"or": [
+        {"cmp": {"op": "eq", "left": {"field": "kind"}, "right": {"lit": "B"}}},
+        {"cmp": {"op": "eq", "left": {"field": "kind"}, "right": {"lit": "C"}}}
+      ]}},
+      "min": 0, "max": null, "mode": "greedy"}},
+    {"var": "C", "cond": {"cmp": {"op": "eq", "left": {"field": "kind"}, "right": {"lit": "C"}}}}
+  ]
+}

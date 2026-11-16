@@ -1,0 +1,11 @@
+{
+  "seq": [
+    {"var": "ENTER", "cond": {"cmp": {"op": "eq", "left": {"field": "kind"}, "right": {"lit": "enter"}}}},
+    {"rep": {"of": {"var": "CHECK", "cond": {"cmp": {"op": "eq", "left": {"field": "kind"}, "right": {"lit": "check"}}}},
+             "min": 0, "max": null, "mode": "greedy"}},
+    {"alt": [
+      {"var": "PASS", "cond": {"cmp": {"op": "eq", "left": {"field": "kind"}, "right": {"lit": "pass"}}}},
+      {"var": "EXIT", "cond": {"cmp": {"op": "eq", "left": {"field": "kind"}, "right": {"lit": "exit"}}}}
+    ]}
+  ]
+}
